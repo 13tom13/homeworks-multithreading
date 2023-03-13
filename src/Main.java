@@ -11,7 +11,6 @@ public class Main {
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < texts.length; i++) {
             int b = i;
-//            threads.add(new Thread(() -> Main.sreach(texts[b])));
             threads.add(new Thread(() -> sreach(texts[b])));
         }
             for (Thread t : threads) {
